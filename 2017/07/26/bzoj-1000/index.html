@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="入门难度,模拟," />
 
 
 
@@ -93,13 +93,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="irides&#39;blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="bzoj 1000 A+B problem题目大意：给定两个整数a，b（0&amp;lt;=a,b&amp;lt;100），要求输出他们的和。 题解：直接输出即可 代码：123456789#include&amp;lt;bits/stdc++.h&amp;gt;using namespace std;int main()&amp;#123;	int a,b;	cin&amp;gt;&amp;gt;a&amp;gt;&amp;gt;b;	cout&amp;lt;&amp;lt;a+b;">
+<meta name="keywords" content="入门难度,模拟">
+<meta property="og:type" content="article">
+<meta property="og:title" content="bzoj 1000 题解">
+<meta property="og:url" content="http://yoursite.com/2017/07/26/bzoj-1000/index.html">
 <meta property="og:site_name" content="irides&#39;blog">
+<meta property="og:description" content="bzoj 1000 A+B problem题目大意：给定两个整数a，b（0&amp;lt;=a,b&amp;lt;100），要求输出他们的和。 题解：直接输出即可 代码：123456789#include&amp;lt;bits/stdc++.h&amp;gt;using namespace std;int main()&amp;#123;	int a,b;	cin&amp;gt;&amp;gt;a&amp;gt;&amp;gt;b;	cout&amp;lt;&amp;lt;a+b;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-07-26T05:35:48.544Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="irides&#39;blog">
+<meta name="twitter:title" content="bzoj 1000 题解">
+<meta name="twitter:description" content="bzoj 1000 A+B problem题目大意：给定两个整数a，b（0&amp;lt;=a,b&amp;lt;100），要求输出他们的和。 题解：直接输出即可 代码：123456789#include&amp;lt;bits/stdc++.h&amp;gt;using namespace std;int main()&amp;#123;	int a,b;	cin&amp;gt;&amp;gt;a&amp;gt;&amp;gt;b;	cout&amp;lt;&amp;lt;a+b;">
 
 
 
@@ -127,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/26/bzoj-1000/"/>
 
 
 
 
 
-  <title>irides'blog</title>
+  <title>bzoj 1000 题解 | irides'blog</title>
   
 
 
@@ -158,9 +163,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -253,9 +256,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -281,9 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/26/bzoj-1000/" itemprop="url">bzoj 1000 题解</a></h1>
+          <h1 class="post-title" itemprop="name headline">bzoj 1000 题解</h1>
         
 
         <div class="post-meta">
@@ -385,48 +386,62 @@
       
 
       
-        
-          
-            <h1 id="bzoj-1000-A-B-problem"><a href="#bzoj-1000-A-B-problem" class="headerlink" title="bzoj 1000 A+B problem"></a>bzoj 1000 A+B problem</h1><h3 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h3><p>给定两个整数a，b（0&lt;=a,b&lt;100），要求输出他们的和。</p>
+        <h1 id="bzoj-1000-A-B-problem"><a href="#bzoj-1000-A-B-problem" class="headerlink" title="bzoj 1000 A+B problem"></a>bzoj 1000 A+B problem</h1><h3 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h3><p>给定两个整数a，b（0&lt;=a,b&lt;100），要求输出他们的和。</p>
 <h3 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h3><p>直接输出即可</p>
 <h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> a,b;</div><div class="line">	<span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</div><div class="line">	<span class="built_in">cout</span>&lt;&lt;a+b;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/入门难度/" rel="tag"># 入门难度</a>
+          
+            <a href="/tags/模拟/" rel="tag"># 模拟</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -434,6 +449,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -454,8 +480,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -517,6 +552,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#bzoj-1000-A-B-problem"><span class="nav-number">1.</span> <span class="nav-text">bzoj 1000 A+B problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目大意："><span class="nav-number">1.0.1.</span> <span class="nav-text">题目大意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解："><span class="nav-number">1.0.2.</span> <span class="nav-text">题解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码："><span class="nav-number">1.0.3.</span> <span class="nav-text">代码：</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -637,10 +688,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
@@ -658,6 +709,18 @@
       <script id="dsq-count-scr" src="https://irides.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017/07/26/bzoj-1000/';
+          this.page.identifier = '2017/07/26/bzoj-1000/';
+          this.page.title = 'bzoj 1000 题解';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://irides.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
